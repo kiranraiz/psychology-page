@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university of sahiwal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,200;0,300;1,200&family=Poppins:wght@300;400;500&family=Roboto:ital,wght@0,300;1,100;1,300&family=Ubuntu+Mono:ital@0;1&display=swap');
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            font-size: 98%;
+        }
+
+
+        .container {
+
+            height: 75px;
+            width: 100%;
+            background-color: antiquewhite;
+            display: flex;
+
+        }
+
+        .div-1 {
+            height: 75px;
+            background-color: #FF7350;
+            width: 30%;
+
+        }
+
+        .div-2 {
+            width: 70%;
+            height: 75px;
+            background-color: #125875;
+
+
+        }
+
+        .mailing {
+            display: flex;
+            justify-content: end;
+            margin-right: 120px;
+            align-items: center;
+
+            text-align: center;
+
+        }
+
+        .mailing a {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+
+        .mailing img {
+            width: 34px;
+            margin-right: 10px;
+            height: auto;
+            margin-top: 27px;
+
+        }
+
+        .mailing .info {
+            margin-top: 16px;
+
+        }
+
+        /* .mailing .info{
+display: flex;
+flex-direction: column;
+} */
+        .mailing .call {
+            display: flex;
+            margin: 0 14px;
+        }
+
+        .mailing .email {
+            display: flex;
+            margin: 0 14px;
+
+        }
+
+        .social {
+
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social a {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 27px;
+
+        }
+
+        .social a i {
+            color: white;
+            font-size: 1.3rem;
+            margin: 0 8px;
+        }
+
+        /* 2nd head strt  */
+
+        .secnd-head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .secnd-head .nav {
+            display: flex;
+            align-items: center;
+
+            justify-content: end;
+            margin-left: 10rem;
+
+
+        }
+
+        .secnd-head .nav a {
+            color: black;
+            margin: 0 20px;
+            font-size: 17px;
+        }
+
+        .secnd-head .logo {
+            margin-left: 4rem;
+        }
+
+        /* hero sec strt 
+ */
+
+        .hero {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('earth back.jpg')
+        }
+
+        .hero {
+            width: 100%;
+            height: 48vh;
+
+        }
+
+        .content {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .content h1 {
+            margin-top: 9rem;
+            font-size: 3rem;
+            color: white;
+        }
+
+        .content button {
+            margin-top: 4rem;
+            padding: 19px 40px;
+            border-radius: 50px;
+            background-color: #FF7350;
+            outline: none;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .content button a {
+            color: white;
+            font-size: 1rem;
+            margin: 0 10px;
+
+        }
+
+        .content button {
+            display: flex;
+            outline: none;
+            border: 1px solid transparent;
+
+        }
+
+        .vl {
+            border-left: 2px solid whitesmoke;
+            height: 19px;
+        }
+
+        .table-section {
+            display: flex;
+            padding: 5rem 3rem;
+        }
+
+        .intro {
+            text-align: justify;
+            /* background-color: #125875; */
+            margin: 0 38px;
+            width: 68%;
+        }
+
+        .intro h1 {
+            font-size: 1.5rem;
+        }
+
+        .intro p {
+            color: rgb(137, 135, 135);
+            font-size: 17px;
+        }
+
+        .vision {
+            padding: .1rem 5rem;
+            text-align: justify;
+
+        }
+
+        .vision p {
+            color: rgb(137, 135, 135);
+            font-size: 17px;
+        }
+
+        .vision h1 {
+            font-size: 1.7rem;
+        }
+
+        .mission p {
+            color: rgb(137, 135, 135);
+            font-size: 17px;
+        }
+
+        .mission {
+            padding: 1.3rem 5rem;
+            text-align: justify;
+        }
+
+        .mission h1 {
+            font-size: 1.7rem;
+
+        }
+
+        .table-section .detail {
+            border: 1px solid rgb(239, 237, 237);
+            box-shadow: 5px 5px 8px rgb(130, 129, 129);
+            border-radius: 10px;
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            height: 17rem;
+        }
+
+        .table-section .detail {
+
+            /* position: fixed;
+  top: 35rem; 
+  right: 60px; 
+  z-index: 1; */
+
+        }
+
+        .table-section .detail a {
+            width: 100%;
+            margin: 14px 15px;
+            color: black;
+            font-weight: 500;
+        }
+
+        .scheme-study {
+            padding: 1.3rem 5rem;
+
+        }
+
+        .scheme-study h1 {
+            font-size: 1.7rem;
+
+        }
+
+        .scheme-study table {
+            border: 1px solid rgb(75, 74, 74);
+        }
+
+        .scheme-study table th {
+            background-color: #FF7350;
+            color: white;
+            padding: 10px;
+        }
+        .scheme-study table td {
+            color: rgb(48, 48, 48);
+            padding: 2px 10px;
+            font-size: 15px;
+        }
+        /* footer strt   */
+
+        .footer .box-container{
+    display: grid;
+    gap: 1.3rem;
+    grid-template-columns: repeat(auto-fit,  minmax(15rem,1fr));
+
+}
+.footer .box-container .box{
+padding: 8px 8px;
+}
+.footer {
+    padding: 3rem 5rem;
+background-color:  #125875;
+}
+.footer h2{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 90px;
+    
+
+}
+.footer #about p{
+    color: rgb(205, 200, 200);
+    text-align: justify;
+    font-size: 15px;
+}
+.footer .link-detail{
+    display: flex;
+    flex-direction: column;
+}
+.footer .link-detail a{
+    color: rgb(205, 200, 200);
+    font-size: 17px;
+}
+.footer .contact-detail{
+    display: flex;
+    flex-direction: column;
+}
+.footer .contact-detail a{
+    color: rgb(205, 200, 200);
+    font-size: 15px; 
+    margin: 7px 0;
+}
+.footer .contact-detail a i{
+    background-color:#FF7350;
+    font-size: 20px; 
+    color: rgb(245, 242, 242);
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+    line-height: 45px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 13px;
+}
+.footer .box   i:hover{
+    background-color:#FF7350;
+
+}
+.footer .box   i{
+    font-size: 20px; 
+    background-color:rgb(195, 193, 193);
+    color: rgb(253, 249, 249);
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+    line-height: 45px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 13px;
+}
+.footer .box #links{
+    margin-left: 90px;
+
+}
+.footer .box   .social{
+    margin-right: 90px;
+
+}
+.developer{
+    display: flex;
+    background-color: #01115E;
+    padding: 2rem 5rem;
+    justify-content: space-between;
+}
+.developer p{
+color: rgb(240, 237, 237);
+font-size: 15px;
+
+}
+.developer p span{
+    font-size: 17px;
+font-weight: 400;
+    color: white;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="div-1">
+            <div class="social">
+                <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+        </div>
+        <div class="div-2">
+
+            <div class="mailing">
+
+
+                <div class="call">
+                    <div class="img">
+                        <img src="phone-call.png" alt="">
+
+                    </div>
+                    <div class="info">
+                        <a href="#"> Call Now !</a><br>
+                        <a href="#">+92-40-9200432</a>
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="img">
+                        <img src="mailing.png" alt="">
+
+                    </div>
+                    <div class="info">
+                        <a href="#">Email Now<br>
+                            <a href="#">info@uosahiwal.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="secnd-head">
+        <div class="logo">
+            <img src="uos logo.png" alt="">
+        </div>
+        <div class="nav">
+            <a href="#">About</a>
+            <a href="#">Administration
+            </a>
+            <a href="#">Faculties
+            </a>
+            <a href="#">Directorates
+            </a>
+            <a href="#">Admissions
+            </a>
+            <a href="#">Students
+            </a>
+            <a href="#">Download Forms</a>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="hero">
+        <div class="content">
+            <div class="heading">
+                <h1>APPLIED PSYCHOLOGY</h1>
+            </div>
+            <div class="discription">
+                <button>
+                    <a href="#">Home </a>
+                    <div class="vl"></div>
+                    <a href="#" style="color: whitesmoke;">Department</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="table-section">
+        <div class="intro">
+            <h1>introduction</h1>
+            <p>The Department of Applied Psychology is a specialized academic department that focuses on the practical
+                application of psychological theories and research to real-world issues. Applied psychology uses
+                psychological principles and methods to address practical problems and promote positive change in
+                individuals, groups, organizations, and society. The department offer graduate program in the clinical
+                psychology. The faculty in the Department of Applied Psychology are typically practitioners and scholars
+                with expertise in specific areas of psychology, and they conduct research, offer clinical services, and
+                provide consulting services to various organizations and communities. Students in the department are
+                trained in both the theoretical foundations of psychology and the practical skills necessary to apply
+                psychological principles to real-world problems.
+            </p>
+        </div>
+        <div class="detail">
+            <a href="#">Department</a>
+            <hr>
+            <a href="#">Teacher Incharge</a>
+            <hr>
+            <a href="#">Faculty</a>
+            <hr>
+            <a href="#">Research Group
+            </a>
+            <hr>
+            <a href="#">Fee Structure
+            </a>
+
+        </div>
+    </div>
+    <div class="vision">
+        <h1> vision</h1>
+        <p>The Applied Psychology Department strives to be a world-class center of excellence in psychological research,
+            education, and clinical practice. Our vision is to promote the understanding of human behavior and mental
+            processes through scientific inquiry, and to use this knowledge to advance individual and societal
+            well-being.
+        </p>
+    </div>
+    <div class="mission">
+        <h1> mission</h1>
+
+        <p>The mission of the Applied Psychology Department is to provide high-quality education and training in
+            psychology, conduct cutting-edge research, and provide evidence-based clinical services to the community. We
+            are committed to fostering an environment of diversity, inclusivity, and mutual respect among faculty,
+            staff, and students. We strive to produce graduates who are knowledgeable, ethical, and skilled in applying
+            psychological principles to real-world issues. Through our research, we aim to advance knowledge in
+            psychology and related fields, and to contribute to the development of evidence-based interventions that
+            improve the lives of individuals and communities. We seek to engage with the broader community to promote
+            awareness and understanding of the value of psychological research and practice.
+        </p>
+    </div>
+    <div class="scheme-study">
+        <h1>Scheme of studies BS Applied Psychology</h1>
+        <table>
+            <tr>
+                <th>Semester I</th>
+                <th>Semester II</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <li>1. Life and Academic Skills</li>
+                </td>
+                <td>
+                    <li>1. Critical Thinking and Reasoning </li>
+                </td>
+            <tr>
+                <td>
+                    <li>2. Introduction to Information and <br> Communication Technology / ICT Skills</li>
+                </td>
+                <td>
+                    <li>2. Expository Writing-II </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>3. Expository Writing-I</li>
+                </td>
+                <td>
+                    <li>3. Statistics for Social Sciences</li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>4. Introduction to Psychology </li>
+                </td>
+                <td>
+                    <li>4. Cognitive Psychology (Theory+Practical)</li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>3. Expository Writing-I</li>
+                </td>
+                <td>
+                    <li>3. Statistics for Social Sciences</li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>5. History & Systems in Psychology </li>
+                </td>
+                <td>
+                    <li>5. Educational Psychology</li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>6. Arabic for Understanding Quran</li>
+                </td>
+            </tr>
+
+            </tr>
+            <tr>
+                <th>Semester III</th>
+                <th>Semester IV</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <li>1. Islamic Studies</li>
+                </td>
+                <td>
+                    <li>1. State, Society and Civic Engagement </li>
+                </td>
+            <tr>
+                <td>
+                    <li>2. Pakistan Studies</li>
+                </td>
+                <td>
+                    <li>2. Arabic as Foreign Language /Persian as <br>
+                        Foreign Language /Turkish as Foreign <br>
+
+                        Language / Chinese as Foreign Language / <br>
+                        Saraiki as Pakistani Language / Punjabi as <br>
+                        Pakistani Language </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>3. Expository Writing-III</li>
+                </td>
+                <td>
+                    <li>3. Constitution and Legal System of Pakistan</li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>4. Urdu Literature </li>
+                </td>
+                <td>
+                    <li>4. Abnormal Psychology </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>5. Social Psychology </li>
+                </td>
+                <td>
+                    <li>5. Clinical Psychology</li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>6. Arabic for Understanding Quran</li>
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+
+            </tr>
+            <tr>
+                <th>Semester V</th>
+                <th>Semester VI</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <li>1. Personality Theories in Psychology</li>
+                </td>
+                <td>
+                    <li>1. Developmental Psychology </li>
+                </td>
+            <tr>
+                <td>
+                    <li>2. Psychological Testing & Measurement <br>
+                        (Theory + Practical) </li>
+                </td>
+                <td>
+                    <li>2. Health Psychology </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>3. Positive Psychology </li>
+                </td>
+                <td>
+                    <li>3. Research Methods-I (Quantitative) </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>4. Physiological Psychology </li>
+                </td>
+                <td>
+                    <li>4. Environmental Psychology li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>5. Peace Psychology</li>
+                </td>
+                <td>
+                    <li>5. Organizational & Consumer Psychology </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <li></li>
+                </td>
+
+                <td>
+                    <li>6. Psychotherapyn</li>
+                </td>
+            </tr>
+
+            </tr>
+            <tr>
+                <th>Semester VII</th>
+                <th>Semester VIII</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <li>1. Data Analysis Using SPSS </li>
+                </td>
+                <td>
+                    <li>1. Gender Issues in Psychology </li>
+                </td>
+            <tr>
+                <td>
+                    <li>2. Forensic Psychology </li>
+                </td>
+                <td>
+                    <li>2. Psychology of Trauma & Disaster <br>
+                        Management </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>3. Research Methods-II (Qualitative) </li>
+                </td>
+                <td>
+                    <li>3. Cross Cultural Psychology </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>4. Counseling Psychology</li>
+                </td>
+                <td>
+                    <li>4. Ethical Issues in Psychology </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>5. Psychological Assessment and Giagnosis</li>
+                </td>
+                <td>
+                    <li>5. Research Project </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li></li>
+                </td>
+                <td>
+                    <li>6. Family Psychology </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li></li>
+                </td>
+
+                <td>
+                    <li>7. Para Psychology </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li></li>
+                </td>
+
+                <td>
+                    <li>8. Psychology of Aging </li>
+                </td>
+            </tr>
+
+            </tr>
+        </table>
+    </div>
+<div class="footer">
+  <div class="box-container">
+    <div class="box" id="about">
+
+        <h2>About us
+        </h2>
+        <p>Established in 2016, the University of Sahiwal has undergone notable transformations in parallel with global advancements during recent years. Frequently at the forefront of innovation and breakthroughs, our institution strives to reinvigorate and empower the prospects of our students through imparting cutting-edge education.
+
+        </p>
+
+        <div class="social">
+            <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+        </div>
+        
+    </div>
+    <div class="box" id="links">
+        <h2>Our Links</h2>
+        <div class="link-detail">
+            <a href="#">Home</a>
+            <a href="#">ORIC</a>
+            <a href="#">QEC</a>
+            <a href="#">contact us</a>
+
+        </div>
+    </div>
+    <div class="box" id="contact">
+        <h2>contact us</h2>
+        <div class="contact-detail">
+            <a href="#"><i class="fa-solid fa-phone"></i>+92-40-9200432</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>info@uosahiwal.edu.pk</a>
+            <a href="#"><i class="fa-solid fa-location-dot"></i>University of Sahiwal, University Road, Sahiwal, Pakistan</a>
+
+        </div>
+    </div>
+  </div>
+</div>
+<div class="developer">
+    <div class="copyright"> <p>Copyright © 2023. All rights reserved.</p></div>
+    <div class="name"> <p>Developed by  <span>Mr. Ahmad Raza,</span> under supervision of <span> Directorate of I.T.</span></p></p></div>
+</div>
+</body>
+
+</html>
